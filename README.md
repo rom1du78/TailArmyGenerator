@@ -1,25 +1,34 @@
-# TailArmyGenerator
-Script Python automatisé pour générer et combiner des tuiles hexagonales destinées au jeu Army Tactical.
+🚀 Étapes d’exécution
 
-⚙️ Utilisation rapide
+1️⃣ Place tes fichiers
 
-🚀 1️⃣ Prépare les dossiers :
+Mets tes terrains dans input_ground/
 
-sources/ → tes terrains de base 🌿
+Mets tes objets dans input_object/
 
-object/ → tes objets (arbres, villages, etc.) 🏠
-
-data_army_generator/ → contient les masques et bordures 🎯
-
-🧩 2️⃣ Lance la génération :
+2️⃣ Lance le script
 
 python tail_army_generator.py
 
 
-🪄 3️⃣ Résultat :
+3️⃣ Résultats
 
-ground/ → tuiles hexagonales générées 🟢
+Les terrains sont transformés en tuiles hexagonales 🟩
 
-result/ → terrains seuls + superpositions complètes 🧱
+Les objets sont découpés, centrés et agrandis automatiquement 🌄
 
-✅ C’est tout ! Le script fait tout automatiquement.
+Les combinaisons finales sont générées dans output_tails/ ✅
+
+4️⃣ Nettoyage
+
+Le dossier data/temp/ est vidé automatiquement à la fin 🧹
+
+Les objets optimisés restent disponibles dans data/object_processed/ pour debug 🔍
+
+✨ Résumé
+
+Tout est automatique : génération → découpe → placement → sortie.
+
+Les objets sont agrandis au maximum sans jamais dépasser la zone blanche du masque.
+
+Aucune configuration nécessaire.
